@@ -1,0 +1,56 @@
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: center; /* Center items horizontally */
+    margin: 20px; /* Margin around the list */
+  }
+  
+  .restaurant-card {
+    background-color: #fff; /* White background for cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 15px; /* Margin between cards */
+    padding: 15px; /* Padding inside cards */
+    max-width: 300px; /* Maximum width for cards */
+    flex: 1 1 200px; /* Flex item that grows and shrinks */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+  }
+  
+  .restaurant-card img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+  }
+  
+  .restaurant-card h3 {
+    font-size: 1.5em; /* Larger font size for headings */
+    margin: 10px 0; /* Spacing around headings */
+  }
+  
+  .restaurant-card p {
+    font-size: 1em; /* Standard font size for paragraphs */
+    line-height: 1.4; /* Improve readability */
+  }
+  
+  .restaurant-card a {
+    display: inline-block; /* Button-like appearance */
+    margin-top: 10px; /* Margin above the link */
+    padding: 10px 15px; /* Padding for the link */
+    background-color: #007bff; /* Primary color for the button */
+    color: white; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .restaurant-card a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  @media (max-width: 600px) {
+    .restaurant-card {
+      flex: 1 1 100%; /* Full width on small screens */
+    }
+  }
+  
